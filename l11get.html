@@ -56,25 +56,19 @@
             $(document).ready(function(){
 
                 $(".container").click(function(){
-                   
                     console.log($(".box"));
                     console.log($(".box")[0]);//element
                     console.log($(".box").eq(0));//array
 
-                    console.log($('.box')[0].className);//box orange
-                    console.log($(".box")[0].classList);//DOMTokenList(2)["box","orange",vale:"box orange"]
+                    console.log($(".box")[0].className);//box orange
                     console.log($(".box")[0].classList[0]);//box
-                    console.log($(".box")[0].classList[1]);//orange
                     console.log($(".box")[0].id);//div1
 
-
-                    console.log($('.box').get(1).className);//box green
-                    console.log($(".box").get(1).classList);//DOMTokenList(2)["box","green",vale:"box green"]
-                    console.log($(".box").get(1).classList[0]);//box
+                    console.log($('.box').get(1));
+                    console.log($(".box").get(1).className);//box green
+                    console.log($(".box").get(1).classList);//DOMToken list
                     console.log($(".box").get(1).classList[1]);//green
-                    console.log($(".box").get(1).id);//div2
-
-
+                    console.log($(".box").get(1).id);
 
                 })
 
