@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Click</title>
+    </head>
+    <body>
+
+       <h3>Welcome to jQuery</h3>
+       <h4>This is awesome js library</h4>
+
+       <div>
+          <h2>
+             <u>Are you ready to learn js library</u>
+          </h2>
+       </div>
+
+       <button type="button" id="click">click</button>
+        
+        <!-- jquery js1 -->
+        <script src="./libs/jquery-3.7.1.min.js"></script>
+
+        <script type="text/javascript">
+
+           $(document).ready(function(){
+
+              console.log($("h3").html());
+              console.log($("h4").html());
+
+              $("#click").click(function(){
+
+                  console.log($("h2").html());
+                  console.log($("h2").text())
+
+              })
+
+
+           })
+            
+        </script>
+
+    </body>
+</html>
